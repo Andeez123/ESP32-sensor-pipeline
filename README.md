@@ -10,7 +10,7 @@ The Flask server is connected to a MongoDB database running on my machine. Conne
 
 Sample data in MongoDB database:
 
-![image](https://github.com/user-attachments/assets/e47b5611-2400-4cd1-9cd8-dfa500859a99)
+![image](https://github.com/Andeez123/ESP32-sensor-pipeline/blob/main/461642985-e47b5611-2400-4cd1-9cd8-dfa500859a99.png)
 
 ## ✏️ Future Plans
 Future plans include expanding the sensor array to capture more data, such as an Ultrasonic/Infrared sensor to capture distance data, Light sensors to capture brightness. As the number of sensors and data scales, Apache Kafka and Apache Spark may be used to process large volumes of data. The API methods need additional work to be able to query more useful data than the placeholder method currently setup, once the API methods have been setup correctly, a frontend will be built using React to display sensor data, along with some visualisations. Another functionality I have planned will be to host the database and the servers on a Raspberry PI, using Cloudfare services to serve my self hosted web application. 
