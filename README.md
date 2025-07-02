@@ -9,4 +9,5 @@ Currently, this project has an ESP32 with a DHT11 sensor wired to it. In the mai
 The Flask server is connected to a MongoDB database running on my machine. Connection, writing and reading from this mongodb database is done using PyMongo. The POST method is used to write data to the mongodb database.
 
 Sample data in MongoDB database:
+
 ![image](https://github.com/user-attachments/assets/e47b5611-2400-4cd1-9cd8-dfa500859a99)
