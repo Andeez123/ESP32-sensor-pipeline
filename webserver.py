@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify
 from pymongo import MongoClient
+from flask_cors import CORS
 
 load_dotenv()
 IP = os.getenv("IPV4")
@@ -12,7 +13,7 @@ db = client.sensor_data
 collection = db.temperature_values
 
 app = Flask(__name__)
-
+CORS(app)
 
 @app.route("/")
 def hello_world():
