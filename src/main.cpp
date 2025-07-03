@@ -3,6 +3,7 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include "time.h"
+#include "credentials.h"
 
 const char* ntpServer = "pool.ntp.org";
 const long  gmtOffset_sec = 28800;

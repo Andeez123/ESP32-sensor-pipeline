@@ -31,12 +31,14 @@ def receive_data():
 
 @app.get("/query")
 def get_data():
-    time = []
-    values = list(db.temperature_values.find())
+    return_list = []
+    values = list(db.temperature_values.find()) #values: list of dicts
     for value in values:
-        value["Time"] = str(value["Time"])
-        time.append(value["Time"])
-    return jsonify(time)
+        return_data = {}
+        return_data["Time"] = str(value["Time"])
+        return_data["Temperature"] = str(value["Temperature"])
+        return_list.append(return_data)
+    return jsonify(return_list)
 
 if __name__ == '__main__':
     app.run(host=IP, port=5000, debug=True)
