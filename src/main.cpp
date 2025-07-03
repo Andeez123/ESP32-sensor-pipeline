@@ -8,9 +8,9 @@ const char* ntpServer = "pool.ntp.org";
 const long  gmtOffset_sec = 28800;
 const int   daylightOffset_sec = 0;
 
-const char* ssid = "";
-const char* password = "";
-String serverName = "";
+const char* ssid = "AndeeChong";
+const char* password = "BeyondLimits17";
+String serverName = "http://192.168.68.105:5000/data";
 
 #define DHTPIN 23
 #define DHTTYPE DHT11
