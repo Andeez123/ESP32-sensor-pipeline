@@ -5,9 +5,9 @@ import './App.css'
 
 function App() {
   const [data, setData] = useState([]);
-
+  const API_URL = import.meta.env.VITE_API_URL;
   useEffect(() => {
-      fetch('http://192.168.68.105:5000/query')
+      fetch(API_URL)
           .then(response => response.json())
           .then(json=> setData(json))
           .catch(error => console.log(error))
